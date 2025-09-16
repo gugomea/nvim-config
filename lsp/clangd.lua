@@ -49,7 +49,7 @@ end
 
 return {
   default_config = {
-    cmd = { 'clangd' },
+    cmd = { 'clangd --rename-file-limit 0' }, -- setting no file limit to rename symbols
     filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda' },
     root_dir = function(fname)
       return util.root_pattern(
