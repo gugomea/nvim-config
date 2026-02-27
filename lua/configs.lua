@@ -1,13 +1,4 @@
--- opt.colorcolumn = "80" -- Highlight column 80
--- opt.autoindent = true -- Enable auto indentation
--- opt.expandtab = true -- Use spaces instead of tabs
--- opt.tabstop = 4 -- Number of spaces for a tab
--- opt.softtabstop = 4 -- Number of spaces for a tab when editing
--- opt.shiftwidth = 4 -- Number of spaces for autoindent
--- opt.shiftround = true -- Round indent to multiple of shiftwidth
--- opt.listchars = "tab: ,multispace:|   ,eol:󰌑" -- Characters to show for tabs, spaces, and end of line
--- opt.scrolloff = 0 -- Keep 0 lines above and below the cursor
--- opt.inccommand = "nosplit" -- Shows the effects of a command incrementally in the buffer
+vim.cmd('colorscheme gruvbox')
 vim.cmd[[set tabstop=4]]
 vim.cmd[[set shiftwidth=4]]
 vim.cmd[[set expandtab]]
@@ -26,3 +17,5 @@ vim.o.ruler = false
 vim.o.showcmd = false
 -- nowrap
 vim.o.wrap = false
+
+vim.cmd('hi ColorColumn ctermbg=grey guibg=grey')

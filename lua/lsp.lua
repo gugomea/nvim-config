@@ -3,6 +3,9 @@ vim.lsp.enable({
   "rust_analyzer",
   "pyright",
   "clangd",
+  "typescript-language-server",
+  "angularls",
+  "ocamllsp",
 })
 
 vim.diagnostic.config({ signs = true })
