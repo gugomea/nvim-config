@@ -1,6 +1,8 @@
 vim.pack.add({ { src = "https://github.com/nvim-telescope/telescope-live-grep-args.nvim.git" } }) -- dependency for Telescope
 vim.pack.add({ { src = "https://github.com/nvim-lua/plenary.nvim.git" } }) -- dependency for Telescope
-vim.pack.add({ {src = "https://github.com/nvim-treesitter/nvim-treesitter.git"}})
+-- treesitter main branch is still on development.
+vim.pack.add({ {src = "https://github.com/nvim-treesitter/nvim-treesitter.git", version = "master" }})
+vim.pack.add({ {src = "https://github.com/j-hui/fidget.nvim.git"}})
 
 vim.pack.add({
   { src = 'https://github.com/neovim/nvim-lspconfig' },
@@ -14,3 +16,4 @@ vim.pack.add({
 
 require("mason").setup({})
 require("telescope").setup({})
+require("fidget").setup({})
